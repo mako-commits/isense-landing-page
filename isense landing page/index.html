@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iSense</title>
+
+    <!--==== Favicon ===-->
+    <link rel="shortcut icon" href="./assets/images/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--==== External CSS  ===-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!----  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!--==== CSS Link ===-->
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/global-style.css">
+    <link rel="stylesheet" href="/assets/css/main-style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/media-queries.css">
+    <link rel="stylesheet" href="/assets/css/hover.min.css">
+    <link rel="stylesheet" href="/assets/css/magic.min.css">
+    <link rel="stylesheet" href="/assets/css/movingbubbles.css">
+</head>
+
+<body onload="myFunction()">
+
+    <!----  <div id="loader"></div>
+    <div id='myDiv>'>-->
+    <!--==== Logo Section ===-->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand header-brand animated bounceInDown slower swap">
+                    <h1 class="m-0">
+                        <a href="#">
+                            <img src="/assets/images/logo.svg" class="hvr-pulse">
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--==== Hero Section ===-->
+    <section class="hero stalight" style="background-image: url('/assets/images/decor-circles (1).png'); background-size: cover;">
+        <div id="sliderContainer">
+            <div class="container mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="hero-heading mb-0 animation-box wow swashIn hvr-bounce-in">Do you sometimes <br>forget the <span>danger</span> <br>zones on site?</h1>
+                        <div class="row">
+
+                            <div class="col-lg-10 wow  twisterInUp">
+                                <p class="lead text-muted mt-4 mb-4 hvr-bounce-in">At <span class="app-name">iSense</span>,we are creating an app to detect falling objects seconds before it lands to make the construction sites a safer place for all workers.</p>
+                                <p class="lead text-muted mt-4 mb-4 hvr-bounce-in">To get the lastest news and update,enter your email</p>
+
+                            </div>
+                        </div>
+
+
+                        <form class=" wow perspectiveLeftReturn " method="POST" id="subscriber-form">
+                            <div class="input-group mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                                <button class="btn btn-outline-secondary btn-primary hvr-buzz" type="submit" id="button-addon2">Notify Me</button>
+                            </div>
+                            <!----  <div class="row ">
+                            <div class="col-8 px-1">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email Address" required>
+                            </div>
+                            <div class="col-4 px-1">
+                                <button class="btn btn-primary hvr-buzz" type="submit">Notify Me</button>
+                            </div>
+                        </div>-->
+                        </form>
+                    </div>
+                    <div class="col-lg-6 hero-img hvr-grow-rotate"><img src="/assets/images/iPhone 11 Pro Max (1).png" alt="... " class="hero-image img-fluid d-none d-lg-block wow flipInY animated animated "></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </div>
+
+    <!---- <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>-->
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-12 wow boingInUp">
+                        <img alt="img" class="img-fluid hvr-wobble-to-top-right" src="/assets/images/section-bg (2).png" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                    <div>
+                        <div class="section-header wow animated fadeInRight ">
+                            <h1 class="section-title hvr-wobble-horizontal">About</h1>
+                        </div>
+                        <div class="wow animated fadeInDown ">
+                            <p class="hvr-bounce-in"><span class="app-name">iSense</span> use proximity sensor embedded in mobile phone to sense the surroundings.Once it detects a falling object,it alerts you with an alarm.</p>
+                            <p class="hvr-bounce-in"><span class="app-name">iSense</span> can also be conected to smart watches to get quicker alert through vibrations</p>
+                            <!---- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                            <button onclick="myFunction()" id="myBtn"><i class="fa fa-angle-right"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0 ">
+                    <div>
+                        <div class="section-header wow animated fadeInLeft slower delay-1s">
+                            <h1 class="section-title hvr-wobble-horizontal">About</h1>
+                        </div>
+                        <div class="wow animated fadeInDown">
+                            <p class="hvr-bounce-in"><span class="app-name">iSense</span> use proximity sensor embedded in mobile phone to sense the surroundings.Once it detects a falling object,it alerts you with an alarm.</p>
+                            <p class="hvr-bounce-in"><span class="app-name">iSense</span> can also be conected to smart watches to get quicker alert through vibrations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-12 wow boingInUp">
+                        <img alt="img" class="img-fluid hvr-wobble-to-top-right" src="/assets/images/section-bg (1).png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--===== Carosel Section =====-->
+    <section id="carousel">
+        <div class="car">
+            <div class="text-center">
+                <h1 class="carousel--text">App Showcase</h1>
+                <p class="carousel__paragraph">Monitor each construction site and identify potential <br>danger zones, safe zones & and work zones. </p>
+            </div>
+            <div class="carousel">
+                <a href="/assets/images/iPhone 11 Pro Max - 5.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 5.png" alt="" class="carousel-image hvr-grow">
+                </a>
+
+                <a href="/assets/images/iPhone 11 Pro Max - 6.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 6.png" alt="" class="carousel-image hvr-grow">
+                </a>
+
+                <a href="/assets/images/iPhone 11 Pro Max - 9.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 9.png" alt="" class="carousel-image hvr-grow">
+                </a>
+                <a href="/assets/images/iPhone 11 Pro Max - 5.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 5.png" alt="" class="carousel-image hvr-grow">
+                </a>
+
+                <a href="/assets/images/iPhone 11 Pro Max - 6.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 6.png" alt="" class="carousel-image hvr-grow">
+                </a>
+
+                <a href="/assets/images/iPhone 11 Pro Max - 9.png" class="carousel-link">
+                    <img src="/assets/images/iPhone 11 Pro Max - 9.png" alt="" class="carousel-image hvr-grow">
+                </a>
+            </div>
+        </div>
+
+
+        <!--==== Footer Section ===-->
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="#FCB500">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(34, 42, 114, 0.2">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+        <footer class="main-footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 mb-5 mb-lg-0 ">
+                        <div class="footer-logo animated bounceInDown"><img src="/assets/images/logo.svg " alt="... " class="img-fluid hvr-pulse"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyrights animated fadeInDownBig">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text-center text-lg-left">
+                            <p class="copyrights-text mb-3 mb-lg-0">&copy; All rights reserved. iSense</p>
+                            <p>Design by jetDev Coded by pythagoras-dev</p>
+
+
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-right">
+                            <ul class="list-inline social mb-0">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-github"></i></a><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></a>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+    </div>
+
+    <!--==== External Javascript Links ===-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js " integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <!--==== Javascript Links ===-->
+    <script src="/assets/js/movingbubbles.js"></script>
+
+    <script src="/assets/js/wow.min.js "></script>
+    <script src="/assets/js/app.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@media (max-width: 991.98px) {
+    section {
+        padding: 0rem 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .hero {
+        /*padding: 12.5rem 0;*/
+        background: url(../img/hero-b.svg) no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        padding: 1.5rem 0 1rem 0;
+        background-color: var(--white-color);
+    }
+    .hero-heading {
+        color: var(--text-color);
+        font-family: var(--section-header-font);
+        font-size: 40px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 999px) {
+    .hero-img {
+        display: none;
+    }
+}
+
+
+/* HERO MEDIAQUERY */
+
+@media (max-width: 991.98px) {
+    .hero {
+        padding: 5rem 0 7rem;
+        padding-top: 8rem;
+    }
+    .subscription-form .form-group {
+        position: static;
+    }
+    .subscription-form .form-group button {
+        position: static;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .btn {
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 414px) {
+    h1,
+    .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+small,
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+mark,
+.mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+}

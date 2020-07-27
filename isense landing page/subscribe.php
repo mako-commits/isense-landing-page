@@ -2,23 +2,28 @@
 
 include './database.php';
 
-$email = trim($_POST['email']);  // To trim white spaces
 
-$email = stripslashes($email); // to remove back slashes
+//Trim white spaces
+$email = trim($_POST['email']);
 
-$email = htmlspecialchars($email); // to remove special characters
+//Remove back slashes
+$email = stripslashes($email);
+
+//Remove special characters
+$email = htmlspecialchars($email);
 
 $result = mysqli_num_rows(mysqli_query($conn, "SELECT 1 FROM early_access WHERE email = '$email';"));
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Check if email is valid
-{
+
+// Check if email is valid
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $signal = 'bad';
     $message = 'Please enter a valid email';
 } elseif ($result > 0) // Check if email exists already
 {
     $signal = 'bad';
     $message = 'Email already exists';
-} else { // All is good.. Lets save the email
+} else {
     $sql = "INSERT INTO `early_access` (`email`) VALUES ('$email')";
 
     if (mysqli_query($conn, $sql)) {
@@ -30,7 +35,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Check if email is valid
     }
 }
 
-mysqli_close($conn); // Close connection
+// Close connection
+mysqli_close($conn);
 
 $data = array(
     'signal' => $signal,

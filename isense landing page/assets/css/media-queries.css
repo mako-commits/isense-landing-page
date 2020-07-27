@@ -10,7 +10,7 @@
         background: url(../img/hero-b.svg) no-repeat;
         background-size: cover;
         background-position: bottom left;
-        padding: 1.5rem 0 1rem 0;
+        padding: 0rem 0 0rem 0;
         background-color: var(--white-color);
     }
     .hero-heading {
@@ -18,11 +18,50 @@
         font-family: var(--section-header-font);
         font-size: 40px;
         line-height: 42px;
+        padding-top: 0px;
+    }
+    #subscribe .notice {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .features-list,
+    .features-list-left {
+        padding: 10px;
+    }
+    .features-list ul.right li {
+        padding: 10px 5px;
+    }
+    .features-list-left {
+        text-align: left;
+    }
+    .features-list-left ul.left li {
+        padding-bottom: 10px;
+        margin-left: -30px;
+        text-align: left;
+    }
+    .features-list ul.right {
+        padding: 0px;
+        margin: 0px;
+    }
+    .features-list-left ul.left {
+        padding: 0px;
+        margin-left: 40px;
+    }
+    #features i {
+        display: none;
+    }
+    .feature-img {
+        display: none;
+    }
+    .right-img {
+        margin-left: 45px;
     }
 }
 
 @media (max-width: 999px) {
-    .hero-img {
+    .hero-img,
+    .feature-img,
+    .right-img {
         display: none;
     }
 }
@@ -32,8 +71,8 @@
 
 @media (max-width: 991.98px) {
     .hero {
-        padding: 5rem 0 7rem;
-        padding-top: 8rem;
+        padding: 3rem 0 3rem;
+        padding-top: 3rem;
     }
     .subscription-form .form-group {
         position: static;

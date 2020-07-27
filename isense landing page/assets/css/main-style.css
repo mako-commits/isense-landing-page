@@ -66,8 +66,8 @@
 
 footer.main-footer {
     padding: 4rem 0;
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
     padding-bottom: 0;
 }
 
@@ -88,7 +88,7 @@ footer.main-footer {
 }
 
 .social-link {
-    color: var(--primary-color);
+    color: var(--white-color);
     font-size: 0.9rem;
     margin: 0 0.625rem;
 }
